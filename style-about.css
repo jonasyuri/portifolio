@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@600&display=swap');
+
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #22D4FD;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* height: 100vh; */
+    box-sizing: border-box; 
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 12%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.12rem;
+    font-weight: 500;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.conteudo {
+    padding: 5% 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conteudo__texto {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.conteudo__texto__titulo {
+    font-size: 1.5rem;
+    font-family: var(--fonte-primaria);
+}
+
+.conteudo__texto__texto {
+    font-size: 1.12rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.texto__destaque {
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__imagem {
+    padding: 1% 0% 0%;
+    width: 44.5%;
+}
+
+.curriculo {
+    font-size: 1.12rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.curriculo__link {
+    color: var(--cor-terciaria);
+}
+
+.rodape {
+    padding: 18px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.12rem;
+    font-weight: 500;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .conteudo {
+        flex-direction: column-reverse;
+        padding: 5%;
+        gap: 50px;
+    }
+
+    .apresentacao__imagem {
+        width: 50%;
+    }
+
+    .conteudo__texto {
+        text-align: center;
+        width: auto;
+    }
+
+    .curriculo {
+        padding: 0 0 5%;
+    }
+}
